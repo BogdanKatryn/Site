@@ -1,0 +1,588 @@
+/* Налаштування для екранів з мінімальною шириною 375px */
+@media only screen and (min-width: 375px) {
+    /* Загальні налаштування для body та html */
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100vh; /* Висота вікна перегляду на весь екран */
+        background: #000000; /* Чорний фон */
+        overflow-x: hidden; /* Прихована горизонтальна прокрутка */
+    }
+
+    /* Спільні стилі для всього документа */
+    body {
+        display: flex;
+        flex-direction: column; /* Вертикальний стовпець */
+    }
+
+    /* Стилі для заголовка */
+    header{
+        background-image: url(https://hi-news.ru/wp-content/uploads/2020/04/100_stars.jpg);
+        background-size: cover; /* Заповнення фону */
+        display: flex;
+        font-family: 'Roboto', sans-serif;
+        margin: 0px;
+        padding: 0px;
+        height: 200px;
+        width: 100%;
+        border-radius: 50px; /* Закруглені кути */
+        justify-content: center; /* Вирівнювання по горизонталі */
+        align-items: center; /* Вирівнювання по вертикалі */
+    }
+
+    /* Стилі для заголовка h1 */
+    header h1 {
+        display: flex;
+        color: #333; /* Колір тексту */
+        font-size: 2.5em; /* Розмір шрифту */
+        font-family: 'Roboto', sans-serif;
+        padding-top: 50px;
+        margin: 20px 0; /* Відступи */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Тінь тексту */
+        align-items: center; /* Вирівнювання по вертикалі */
+        justify-content: center; /* Вирівнювання по горизонталі */
+    }
+
+    /* Стилі для пунктів меню в заголовку */
+    header ul li {
+        margin: 120px auto; /* Відступи */
+    }
+
+    /* Стилі для основного вмісту */
+    main{
+        background-color: black; /* Чорний фон */
+        background-size: cover; /* Заповнення фону */
+        margin-top: 20px; /* Відступ зверху */
+        margin-bottom: 20px; /* Відступ знизу */
+    }
+
+    /* Стилі для класу .a1 */
+    .a1{
+        text-decoration: none; /* Відсутність підкреслення */
+        font-size: 24px; /* Розмір шрифту */
+        border: 5px solid blue; /* Сплошна рамка */
+        color: blue; /* Синій колір тексту */
+        background-color: yellow; /* Жовтий фон */
+        padding: 5px; /* Відступи всередині */
+    }
+
+    /* Псевдоклас при наведенні миші */
+    .a1:hover{
+        border: 5px solid yellow; /* Зміна рамки */
+        color: yellow; /* Жовтий колір тексту */
+        background-color: blue; /* Синій фон */
+        font-weight: 700; /* Жирний шрифт */
+        box-shadow: 5px -5px blue; /* Тінь */
+    }
+
+    /* Стилі для .b1 */
+    .b1{
+        background-color: #fff; /* Білий фон */
+        color: #000; /* Чорний текст */
+        font-size: 20px; /* Розмір шрифту */
+        font-weight: bold; /* Жирний шрифт */
+        border: 3px solid white; /* Біла рамка */
+        border-radius: 5px; /* Закруглені кути */
+        margin-right: 100px; /* Відступ справа */
+        margin-left: 150px; /* Відступ зліва */
+        margin-bottom: 50px; /* Відступ знизу */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тінь */
+        position: center; /* Позиціонування по центру */
+        width: 300px; /* Ширина */
+        height: 300px; /* Висота */
+        text-align: center; /* Вирівнювання по центру */
+        justify-content: center; /* Вирівнювання по горизонталі */
+    }
+
+    /* Псевдоклас при наведенні миші */
+    .b1:hover {
+        background-color: #000000; /* Чорний фон */
+        color: #fff; /* Білий текст */
+        border: 5px solid red; /* Червона рамка */
+        border-radius: 5px; /* Закруглені кути */
+        width: 300px; /* Ширина */
+        height: 300px; /* Висота */
+        text-align: center; /* Вирівнювання по центру */
+        justify-content: center; /* Вирівнювання по горизонталі */
+    }
+
+    /* Псевдоклас при фокусі */
+    .b1:focus {
+        outline: none; /* Відсутність контуру фокуса */
+        box-shadow: 0 0 0 3px rgb(0, 0, 0); /* Тінь */
+    }
+
+    /* Градієнт з кольорами від червоного до фіолетового */
+    .b2 {
+        background: linear-gradient(to right, 
+        red, orange, yellow, green, blue, indigo, violet ); /* Градієнт з кольорами райдуги */
+        color: white; /* Колір тексту */
+        font-size: 20px; /* Розмір шрифту */
+        font-weight: bold; /* Товщина шрифту */
+        border: 3px solid white; /* Рамка */
+        margin-right: 100px; /* Відступ праворуч */
+        margin-left: 150px; /* Відступ зліва */
+        margin-bottom: 50px; /* Відступ знизу */
+        border-radius: 5px; /* Радіус закруглення кутів */
+        cursor: pointer; /* Курсор під час наведення */
+        transition: background-color 0.3s; /* Плавна зміна кольору фону при наведенні */
+        width: 300px; /* Ширина */
+        height: 300px; /* Висота */
+        text-align: center; /* Вирівнювання тексту по центру */
+        justify-content: center; /* Вирівнювання контенту по горизонталі */
+    }
+
+    /* Псевдоклас для наведення миші */
+    .b2:hover {
+        background-image: url(https://i.pinimg.com/originals/e6/f8/0b/e6f80be8122d7019c37b39b02dd6ec2c.gif); /* Зображення на фоні при наведенні */
+        background-size: cover; /* Розмір фону */
+        font-weight: bold; /* Товщина шрифту */
+        text-align: center; /* Вирівнювання тексту по центру */
+        color: rgb(0, 0, 0); /* Колір тексту */
+        text-transform: uppercase; /* Перетворення тексту на великі літери */
+        font-size: 1.1em; /* Розмір шрифту */
+        width: 300px; /* Ширина */
+        height: 300px; /* Висота */
+        text-align: center; /* Вирівнювання тексту по центру */
+        justify-content: center; /* Вирівнювання контенту по горизонталі */
+    }
+
+    .b3 {
+        display: inline-block; /* Відображення як блок, але зберігання іншого контенту на тому ж рядку */
+        font-size: 20px; /* Розмір шрифту */
+        font-weight: bold; /* Товщина шрифту */
+        border: 3px solid white; /* Рамка */
+        border-radius: 5px; /* Радіус закруглення кутів */
+        margin-bottom: 50px; /* Відступ знизу */
+        margin-right: 100px; /* Відступ праворуч */
+        margin-left: 150px; /* Відступ зліва */
+        background-color: #bb10dd; /* Колір фону */
+        color: white; /* Колір тексту */
+        text-align: center; /* Вирівнювання тексту по центру */
+        text-decoration: none; /* Відсутність декорації тексту */
+        width: 300px; /* Ширина */
+        height: 300px; /* Висота */
+        justify-content: center; /* Вирівнювання контенту по горизонталі */
+    }
+    
+    .b3:hover {
+        background-image: url(https://i.gifer.com/Se8X.gif); /* Зображення на фоні при наведенні */
+        color: red; /* Колір тексту */
+        font-size: 20px; /* Розмір шрифту */
+        font-weight: bold; /* Товщина шрифту */
+        width: 300px; /* Ширина */
+        height: 300px; /* Висота */
+        text-align: center; /* Вирівнювання тексту по центру */
+        justify-content: center; /* Вирівнювання контенту по горизонталі */
+    }
+    
+    .b4 {
+        background-color: orange; /* Колір фону */
+        font-size: 20px; /* Розмір шрифту */
+        margin-bottom: 50px; /* Відступ знизу */
+        margin-right: 100px; /* Відступ праворуч */
+        margin-left: 150px; /* Відступ зліва */
+        font-weight: bold; /* Товщина шрифту */
+        border: 3px solid white; /* Рамка */
+        border-radius: 5px; /* Радіус закруглення кутів */
+        font-family: 'Times New Roman', Times, serif; /* Шрифт */
+        text-decoration: underline; /* Підкреслення тексту */
+        text-underline-position: under; /* Позиція підкреслення */
+        text-decoration-color: blue; /* Колір підкреслення */
+        width: 300px; /* Ширина */
+        height: 300px; /* Висота */
+        text-align: center; /* Вирівнювання тексту по центру */
+        justify-content: center; /* Вирівнювання контенту по горизонталі */
+    }
+    
+    .b4:hover {
+        font-family: cursive; /* Шрифт */
+        text-decoration: underline; /* Підкреслення тексту */
+        text-decoration-style: wavy; /* Стиль підкреслення */
+        text-underline-position: under; /* Позиція підкреслення */
+        text-decoration-color: blue; /* Колір підкреслення */
+        width: 300px; /* Ширина */
+        height: 300px; /* Висота */
+        text-align: center; /* Вирівнювання тексту по центру */
+        justify-content: center; /* Вирівнювання контенту по горизонталі */
+    }
+
+    .b5 {
+        background-color: blue; /* Колір фону */
+        font-size: 20px; /* Розмір шрифту */
+        margin-bottom: 50px; /* Відступ знизу */
+        margin-right: 100px; /* Відступ праворуч */
+        margin-left: 150px; /* Відступ зліва */
+        font-weight: bold; /* Товщина шрифту */
+        border: 3px solid white; /* Рамка */
+        border-radius: 5px; /* Радіус закруглення кутів */
+        color: #fff; /* Колір тексту */
+        width: 300px; /* Ширина */
+        height: 300px; /* Висота */
+        text-align: center; /* Вирівнювання тексту по центру */
+        justify-content: center; /* Вирівнювання контенту по горизонталі */
+    }
+    
+    .b5:hover {
+        background-color: rgb(81, 177, 255); /* Колір фону при наведенні */
+        font-size: 20px; /* Розмір шрифту */
+        font-weight: bold; /* Товщина шрифту */
+        color: #000000; /* Колір тексту */
+        content: "✅Lists✅"; /* Зміст контенту */
+        width: 300px; /* Ширина */
+        height: 300px; /* Висота */
+        text-align: center; /* Вирівнювання тексту по центру */
+        justify-content: center; /* Вирівнювання контенту по горизонталі */
+    }
+    
+
+    .b6 {
+        background-color: rgb(255, 0, 98); /* Колір фону */
+        font-size: 20px; /* Розмір шрифту */
+        margin-bottom: 50px; /* Відступ знизу */
+        margin-right: 100px; /* Відступ праворуч */
+        margin-left: 150px; /* Відступ зліва */
+        font-weight: bold; /* Товщина шрифту */
+        border: 3px solid white; /* Рамка */
+        border-radius: 5px; /* Радіус закруглення кутів */
+        color: #fff; /* Колір тексту */
+        width: 300px; /* Ширина */
+        height: 300px; /* Висота */
+        text-align: center; /* Вирівнювання тексту по центру */
+        justify-content: center; /* Вирівнювання контенту по горизонталі */
+    }
+    
+    .b6:hover {
+        background-image: url(https://img.freepik.com/free-photo/aesthetic-minimal-white-grid-pattern-wallpaper_53876-96916.jpg?size=626&ext=jpg&ga=GA1.1.632798143.1712448000&semt=ais); /* Зображення фону при наведенні */
+        color: #000; /* Колір тексту */
+        width: 300px; /* Ширина */
+        height: 300px; /* Висота */
+        text-align: center; /* Вирівнювання тексту по центру */
+        justify-content: center; /* Вирівнювання контенту по горизонталі */
+    }
+    
+
+    .b7 {
+        width: 300px; /* Ширина */
+        height: 300px; /* Висота */
+        font-size: 20px; /* Розмір шрифту */
+        font-weight: bold; /* Товщина шрифту */
+        border: 3px solid white; /* Рамка */
+        border-radius: 5px; /* Радіус закруглення кутів */
+        margin-bottom: 50px; /* Відступ знизу */
+        margin-right: 100px; /* Відступ праворуч */
+        margin-left: 150px; /* Відступ зліва */
+        background: linear-gradient(#0074d9, #ffdc00); /* Градієнт фону */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тінь */
+        text-align: center; /* Вирівнювання тексту по центру */
+        justify-content: center; /* Вирівнювання контенту по горизонталі */
+    }
+    
+    .b7:hover {
+        background: linear-gradient(#ff0000, #000000 80%); /* Градієнт фону при наведенні */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тінь */
+        color: #fff; /* Колір тексту */
+        width: 300px; /* Ширина */
+        height: 300px; /* Висота */
+        text-align: center; /* Вирівнювання тексту по центру */
+        justify-content: center; /* Вирівнювання контенту по горизонталі */
+    }
+    
+
+    .b8 {
+        background-color: #055daa; /* Колір фону */
+        font-size: 20px; /* Розмір шрифту */
+        margin-bottom: 50px; /* Відступ знизу */
+        margin-right: 100px; /* Відступ праворуч */
+        margin-left: 150px; /* Відступ зліва */
+        font-weight: bold; /* Товщина шрифту */
+        border: 3px solid white; /* Рамка */
+        border-radius: 5px; /* Радіус закруглення кутів */
+        width: 300px; /* Ширина */
+        height: 300px; /* Висота */
+        text-align: center; /* Вирівнювання тексту по центру */
+        justify-content: center; /* Вирівнювання контенту по горизонталі */
+    }
+    
+    .b8:hover {
+        background-image: url(https://media0.giphy.com/media/rERg78R6dLB7rwDc7u/200w.gif?cid=6c09b952hebtup2fc348rs4jqugrkcjykiefot0fy5p1q6dw&ep=v1_gifs_search&rid=200w.gif&ct=g); /* Зображення фону при наведенні */
+        width: 300px; /* Ширина */
+        height: 300px; /* Висота */
+        text-decoration: underline; /* Підкреслення тексту */
+        text-align: center; /* Вирівнювання тексту по центру */
+        justify-content: center; /* Вирівнювання контенту по горизонталі */
+    }
+    
+
+    .b9 {
+        background-color: #ffffff; /* Колір фону */
+        font-size: 20px; /* Розмір шрифту */
+        margin-bottom: 50px; /* Відступ знизу */
+        margin-right: 100px; /* Відступ праворуч */
+        margin-left: 150px; /* Відступ зліва */
+        font-weight: bold; /* Товщина шрифту */
+        border: 3px solid white; /* Рамка */
+        border-radius: 5px; /* Радіус закруглення кутів */
+        width: 300px; /* Ширина */
+        height: 300px; /* Висота */
+        text-align: center; /* Вирівнювання тексту по центру */
+        justify-content: center; /* Вирівнювання контенту по горизонталі */
+    }
+    
+    .b9:hover {
+        background-image: url(https://i.gifer.com/M6L1.gif); /* Зображення фону при наведенні */
+        background-size: cover; /* Розмір зображення фону */
+        width: 300px; /* Ширина */
+        height: 300px; /* Висота */
+        text-align: center; /* Вирівнювання тексту по центру */
+        justify-content: center; /* Вирівнювання контенту по горизонталі */
+    }
+    
+
+    .b10 {
+        background-color: pink; /* Колір фону */
+        font-size: 20px; /* Розмір шрифту */
+        margin-bottom: 50px; /* Відступ знизу */
+        margin-right: 100px; /* Відступ праворуч */
+        margin-left: 150px; /* Відступ зліва */
+        font-weight: bold; /* Товщина шрифту */
+        border: 3px solid white; /* Товщина та колір рамки */
+        border-radius: 5px; /* Радіус закруглення кутів */
+        width: 300px; /* Ширина */
+        height: 300px; /* Висота */
+        text-align: center; /* Вирівнювання тексту по центру */
+        justify-content: center; /* Вирівнювання вмісту по центру */
+    }
+    
+    .b10:hover {
+        background-image: url(https://i.gifer.com/Yu5t.gif); /* Зображення при наведенні */
+        background-size: cover; /* Розмір зображення */
+        width: 300px; /* Ширина */
+        height: 300px; /* Висота */
+        text-align: center; /* Вирівнювання тексту по центру */
+        justify-content: center; /* Вирівнювання вмісту по центру */
+    }
+    
+
+    .b11 {
+        background-color: #000000; /* Чорний колір фону */
+        color: white; /* Білий колір тексту */
+        font-size: 20px; /* Розмір шрифту */
+        margin-bottom: 50px; /* Відступ знизу */
+        margin-right: 100px; /* Відступ праворуч */
+        margin-left: 150px; /* Відступ зліва */
+        font-weight: bold; /* Товщина шрифту */
+        border: 3px solid white; /* Товщина та колір рамки */
+        border-radius: 5px; /* Радіус закруглення кутів */
+        width: 300px; /* Ширина */
+        height: 300px; /* Висота */
+        text-align: center; /* Вирівнювання тексту по центру */
+        justify-content: center; /* Вирівнювання вмісту по центру */
+    }
+    
+    .b11:hover {
+        background-image: url(https://i.gifer.com/7Mzl.gif); /* Зображення при наведенні */
+        background-size: cover; /* Розмір зображення */
+        color: white; /* Білий колір тексту */
+        width: 300px; /* Ширина */
+        height: 300px; /* Висота */
+        text-align: center; /* Вирівнювання тексту по центру */
+        justify-content: center; /* Вирівнювання вмісту по центру */
+    }
+    
+
+    .b12 {
+        background-color: #055daa; /* Колір фону */
+        font-size: 20px; /* Розмір шрифту */
+        margin-bottom: 50px; /* Відступ знизу */
+        margin-right: 100px; /* Відступ праворуч */
+        margin-left: 150px; /* Відступ зліва */
+        font-weight: bold; /* Товщина шрифту */
+        border: 3px solid white; /* Товщина та колір рамки */
+        border-radius: 5px; /* Радіус закруглення кутів */
+        width: 300px; /* Ширина */
+        height: 300px; /* Висота */
+        text-align: center; /* Вирівнювання тексту по центру */
+        justify-content: center; /* Вирівнювання вмісту по центру */
+    }
+    
+    .b12:hover {
+        background-image: url(https://i.gifer.com/bJk.gif); /* Зображення при наведенні */
+        background-size: cover; /* Розмір зображення */
+        color: white; /* Білий колір тексту */
+        width: 300px; /* Ширина */
+        height: 300px; /* Висота */
+        text-align: center; /* Вирівнювання тексту по центру */
+        justify-content: center; /* Вирівнювання вмісту по центру */
+    }
+    
+
+    .b13 {
+        background-color: #fbff00; /* Колір фону */
+        font-size: 20px; /* Розмір шрифту */
+        margin-bottom: 50px; /* Відступ знизу */
+        margin-right: 100px; /* Відступ праворуч */
+        margin-left: 150px; /* Відступ зліва */
+        font-weight: bold; /* Товщина шрифту */
+        border: 3px solid white; /* Товщина та колір рамки */
+        border-radius: 5px; /* Радіус закруглення кутів */
+        width: 300px; /* Ширина */
+        height: 300px; /* Висота */
+        text-align: center; /* Вирівнювання тексту по центру */
+        justify-content: center; /* Вирівнювання вмісту по центру */
+    }
+    
+    .b13:hover {
+        background-image: url(https://i.gifer.com/MG8g.gif); /* Зображення при наведенні */
+        background-size: cover; /* Розмір зображення */
+        width: 300px; /* Ширина */
+        height: 300px; /* Висота */
+        text-align: center; /* Вирівнювання тексту по центру */
+        justify-content: center; /* Вирівнювання вмісту по центру */
+    }
+    
+
+    .b14 {
+        background-color: #aaaaaa; /* Колір фону */
+        font-size: 20px; /* Розмір шрифту */
+        margin-bottom: 50px; /* Відступ знизу */
+        margin-right: 100px; /* Відступ праворуч */
+        margin-left: 150px; /* Відступ зліва */
+        font-weight: bold; /* Товщина шрифту */
+        border: 3px solid white; /* Товщина та колір рамки */
+        border-radius: 5px; /* Радіус закруглення кутів */
+        width: 300px; /* Ширина */
+        height: 300px; /* Висота */
+        text-align: center; /* Вирівнювання тексту по центру */
+        justify-content: center; /* Вирівнювання вмісту по центру */
+    }
+    
+    .b14:hover {
+        background-image: url(https://i.gifer.com/Q7i2.gif); /* Зображення при наведенні */
+        background-size: cover; /* Розмір зображення */
+        width: 300px; /* Ширина */
+        height: 300px; /* Висота */
+        text-align: center; /* Вирівнювання тексту по центру */
+        justify-content: center; /* Вирівнювання вмісту по центру */
+    }
+    
+
+    .b15 {
+        background-color: #ffffff; /* Колір фону */
+        font-size: 20px; /* Розмір шрифту */
+        margin-bottom: 50px; /* Відступ знизу */
+        margin-right: 100px; /* Відступ праворуч */
+        margin-left: 150px; /* Відступ зліва */
+        font-weight: bold; /* Товщина шрифту */
+        border: 3px solid white; /* Товщина та колір рамки */
+        border-radius: 5px; /* Радіус закруглення кутів */
+        width: 300px; /* Ширина */
+        height: 300px; /* Висота */
+        text-align: center; /* Вирівнювання тексту по центру */
+        justify-content: center; /* Вирівнювання вмісту по центру */
+    }
+    
+    .b15:hover {
+        background-image: url(https://i.gifer.com/FbqQ.gif); /* Зображення при наведенні */
+        background-size: cover; /* Розмір зображення */
+        width: 300px; /* Ширина */
+        height: 300px; /* Висота */
+        text-align: center; /* Вирівнювання тексту по центру */
+        justify-content: center; /* Вирівнювання вмісту по центру */
+    }
+    
+
+    .header-nav {
+        display: flex; /* Відображення в ряд */
+        height: 300px; /* Висота */
+        width: 100%; /* Ширина */
+        justify-content: center; /* Вирівнювання по горизонталі по центру */
+        align-items: center; /* Вирівнювання по вертикалі по центру */
+    }
+    
+    .header-nav ul {
+        background: rgba(255, 255, 255, 0.9); /* Колір фону з прозорістю */
+        border-radius: 15px; /* Радіус закруглення кутів */
+        list-style-type: none; /* Стиль маркера списку */
+        margin: 20px; /* Зовнішні відступи */
+        padding: 0px; /* Внутрішні відступи */
+        height: 50px; /* Висота */
+        width: 250px; /* Ширина */
+        display: flex; /* Відображення в ряд */
+        font-size: 24px; /* Розмір шрифту */
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Шрифт */
+        justify-content: center; /* Вирівнювання по горизонталі по центру */
+        align-items: center; /* Вирівнювання по вертикалі по центру */
+    }
+    
+    .header-nav ul li {
+        margin: 35px; /* Зовнішні відступи */
+        padding-right: 75px; /* Праві внутрішні відступи */
+        padding-left: 75px; /* Ліві внутрішні відступи */
+    }
+    
+    .header-nav ul li a {
+        position: relative; /* Позиціонування відносно батька */
+        text-decoration: none; /* Відміна підкреслення */
+        color: #000000; /* Колір тексту */
+    }
+    
+    .header-nav ul li a::after {
+        content: ''; /* Зміст псевдоелементу */
+        position: absolute; /* Абсолютне позиціонування */
+        left: 50%; /* Позиція відносно батька */
+        bottom: -5px; /* Відступ віднизу */
+        width: 0px; /* Ширина підкреслення */
+        height: 2px; /* Висота підкреслення */
+        background-color: #ff0000; /* Колір підкреслення */
+        transition: width 1s, left 1s; /* Плавні зміни ширини та позиції */
+        transform: translateX(-50%); /* Зміщення на 50% вліво */
+    }
+
+    .header-nav ul li a:hover::after {
+        width: 90%; /* Збільшення ширини підкреслення при наведенні */
+        background-color: #ff0000; /* Зміна кольору підкреслення при наведенні */
+    }
+    
+
+    section {
+        background-image: url(https://catherineasquithgallery.com/uploads/posts/2021-03/1614840300_43-p-fon-zvezdnoe-nebo-59.jpg);
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        padding: 50px;
+        padding-left: 50px;
+        margin: 25px;
+        margin-left: 35px;
+        border-radius: 5px;
+    }
+    
+
+    footer {
+        background-image: url(https://hi-news.ru/wp-content/uploads/2020/04/100_stars.jpg);
+        background-color: red; /* Фон футера */
+        background-size: cover; /* Розмір фонового зображення */
+        color: white; /* Колір тексту */
+        display: flex;
+        border-radius: 50px; /* Радіус закруглення кутів */
+        margin: 0px;
+        padding: 0px;
+        height: 200px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    footer h1 {
+        display: table; /* Налаштування для вирівнювання тексту по центру */
+        background-color: black; /* Фон заголовка */
+        font-size: 16px; /* Розмір шрифту */
+        font-family: 'Roboto', sans-serif; /* Шрифт */
+        margin: 80px auto; /* Зовнішні відступи */
+        border-radius: 5px; /* Радіус закруглення кутів */
+        padding: 5px 10px; /* Внутрішні відступи */
+        align-items: center;
+        justify-content: center;
+    }
+}    
+
+

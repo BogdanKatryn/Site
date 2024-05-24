@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/256/174/174854.png">
+    <title>Project</title>
+</head>
+<body>
+
+<header>
+    <nav class="header-nav">
+        <ul>
+            <li><a href="index.html"><b>Головна</b></a></li>
+        </ul>
+        <ul>
+            <li><a href="works.html"><b>Роботи</b></a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    
+    <div class="bg-div">
+        <center>
+            <h1><b>Про мене</b></h1>
+        </center>
+        <section>
+            <p>
+                <center>
+                    <h2>Богдан Катрин</h2>
+                </center>
+            </p>
+            <p>
+                <center>
+                    <h2>Студент Відкритого Міжнародного Університету Розвитку Людини «УКРАЇНА»</h2>
+                </center>
+                <center>
+                    <h2>Освіта</h2>
+                </center>
+            </p>
+            <p>
+                <b>Факультет:</b> Інженерія програмного забеспечення
+            </p>
+            <p>
+                <b>Спеціальність:</b> 121 Інженерія програмного забеспечення
+            </p>
+            <p>
+                <b>Курс:</b> 2-й курс бакалавра
+            </p>
+            <center>
+                <h2>Навички</h2>
+            </center>
+            <p>
+                <b>Веб-розробка</b>
+            </p>
+                <div class="buttonContainer">
+                    <div class="buttonItem">
+                        <a href="#" class="roundButton" onclick="showText(event, 'textContainer_1')">HTML</a>
+                        <div id="textContainer_1" class="hiddenText">
+                            <b>HTML: (HyperText Markup Language)</b> Досвід створення структури веб-сторінок, використовуючи семантичні теги для зручності та доступності.
+                        </div>
+                    </div>
+
+                    <div class="buttonItem">
+                        <a href="#" class="roundButton" onclick="showText(event, 'textContainer_2')">CSS</a>
+                        <div id="textContainer_2" class="hiddenText">
+                            <b>CSS: (Cascading Style Sheets)</b> Володіння техніками стилізації веб-сторінок.
+                        </div>
+                    </div>
+
+                    <div class="buttonItem">
+                        <a href="#" class="roundButton" onclick="showText(event, 'textContainer_3')">JavaScript</a>
+                        <div id="textContainer_3" class="hiddenText">
+                            <b>JavaScript:</b> Досвід роботи з створення інтерактивних елементів на веб-сторінках.
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    function showText(event, containerId) {
+                        event.preventDefault(); // Попереджує перехід за посиланням
+                        // Закриття всіх текстових блоків, крім того, який потрібно відкрити
+                        var textContainers = document.querySelectorAll('.hiddenText');
+                        textContainers.forEach(function(container) {
+                            if (container.id !== containerId) {
+                                container.style.display = 'none';
+                            }
+                        });
+                        // Зміна видимості вибраного текстового блоку
+                        var textContainer = document.getElementById(containerId);
+                        if (textContainer.style.display === 'none' || textContainer.style.display === '') {
+                            textContainer.style.display = 'block';
+                        } else {
+                            textContainer.style.display = 'none';
+                        }
+                    }
+                </script>
+                <p>
+                    <b>Адаптивний веб-дизайн</b>
+                </p>
+                <ul>
+                    <li>Створення веб-сайтів, які добре виглядають на будь-яких пристроях, використовуючи медіа-запити та адаптивні техніки дизайну.</li>
+                </ul>
+                <p>
+                    <b>Системи контролю версій</b>
+                </p>
+                <ul>
+                    <li><b>Git:</b> Використання системи контролю версій, робота з гілками, вирішення конфліктів та співпраця через платформи як GitHub.</li>
+                </ul>
+                <p>
+                    <b>Мови програмування:</b>
+                </p>
+                <ul>
+                    <li><b>Python:</b> Досвід у розробці скриптів, роботи з бібліотеками для автоматизації завдань та аналізу даних.</li>
+                    <li><b>Java:</b> Основи об'єктно-орієнтованого програмування, розробка додатків та робота з різними фреймворками.</li>
+                </ul>
+                <p>
+                    <b>Робота з API</b>
+                </p>
+                <ul>
+                    <li><b>REST API:</b> Знання основ REST архітектури, створення та споживання RESTful сервісів.</li>
+                    <li><b>Telegram API:</b> Створення та налаштування ботів для Telegram, інтеграція з іншими сервісами через API.</li>
+                    <li>та інші.</li>
+                </ul>
+                <p>
+                    <b>Проекти та досвід</b>
+                </p>
+                <ul>
+                    <li><b>Responsive Web Development:</b> Створення адаптивних веб-сайтів, які відображаються коректно на різних пристроях, включаючи мобільні телефони та планшети.</li>
+                    <li><b>Telegram Bots:</b> Розробка ботів для автоматизації завдань, надання інформації та інтерактивного спілкування з користувачами.</li>
+                </ul>
+                <p>
+                    <b>Особисті якості</b>
+                </p>
+                <ul>
+                    <li><b>Відповідальність:</b> Завжди  виконую завдання вчасно і якісно.</li>
+                    <li><b>Самоосвіта:</b> Постійно навчаюсь новим технологіям та методикам, інколи стежу за сучасними трендами у сфері програмування.</li> 
+                    <li><b>Комунікабельність:</b> Легко знайду спільну мову з колегами та клієнтами, чітко висловлюю свої думки та ідеї.</li>
+                    <li><b>Аналітичне мислення: </b>Вмію аналізувати проблеми та знаходити оптимальні рішення, швидко орієнтуюсь в складних ситуаціях.</li>
+                    <li><b>Організованість:</b> Вмію ефективно планувати свій час, пріоритезувати задачі та дотримуватися дедлайнів.</li>
+                    <li><b>Стресостійкість:</b> Здатен працювати під тиском та зберігати високу продуктивність навіть в умовах стресу.</li>
+                </ul>
+                <p>
+                    <b>Контакти</b>
+                </p>
+                <address>
+                    <a href="mailto: azazel2002@icloud.com"> azazel2002@icloud.com</a><br/>
+                    <a href="tel: +380969487181"> +380969487181</a><br/>
+                </address>
+            </div>
+        </section>
+</main>
+
+<footer>
+    <center>
+        <h1>&copy; 2024 Всі права захищені.</h1>
+    </center>
+</footer>
+</html>
